@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-blush: #FCE7EF;
+    --color-cream: #FFF8F0;
+    --color-white: #FFFFFF;
+    --color-red: #A61B3C;
+    --color-rose: #E8A3B5;
+    --color-brown: #49343B;
+  }
+
+  body {
+    background-color: #FFF8F0;
+    color: #49343B;
+    font-family: 'Hind Siliguri', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+.font-romantic {
+  font-family: 'Galada', cursive, 'Noto Serif Bengali', serif;
+}
+
+.font-serif-bn {
+  font-family: 'Noto Serif Bengali', serif;
+}
+
+.font-sans-bn {
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
+/* Paper texture simulation */
+.bg-letter-paper {
+  background-color: #FFFDF9;
+  background-image: 
+    radial-gradient(#E8A3B5 0.5px, transparent 0.5px),
+    radial-gradient(#49343B 0.3px, #FFFDF9 0.3px);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+}
+
+/* Subtle glow */
+.rose-glow {
+  box-shadow: 0 10px 30px -10px rgba(166, 27, 60, 0.15);
+}
+
+.envelope-shadow {
+  box-shadow: 0 20px 40px -15px rgba(73, 52, 59, 0.18), 0 0 20px rgba(232, 163, 181, 0.2);
+}
+
+/* Custom delicate scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF8F0;
+}
+::-webkit-scrollbar-thumb {
+  background: #E8A3B5;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A61B3C;
+}
+
+@keyframes floatGentle {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(2deg);
+  }
+}
+
+.animate-float {
+  animation: floatGentle 5s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.03);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 3s ease-in-out infinite;
+}

@@ -1,11 +1,36 @@
-<div align="center">
+# প্রিয়ার কাছে বাপ্পার সাতটি চিঠি (Seven Letters for Priya)
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+একটি আন্তরিক ও রোমান্টিক বাংলা ক্ষমা প্রার্থনা ও অনুভূতির ওয়েবসাইট।
 
-  <h1>Built with AI Studio</h2>
+---
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## ভেরসেল (Vercel)-এ ডিপ্লয় করার নির্দেশিকা (How to Deploy on Vercel)
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+এই প্রকল্পটি সম্পূর্ণভাবে **Vite + React (TypeScript) + Tailwind CSS** দিয়ে নির্মিত এবং **Vercel**-এর জন্য ১০০% উপযুক্ত ও প্রস্তুত করা হয়েছে।
 
-</div>
+### পদ্ধতি ১: গিটহাব ও ভেরসেল ড্যাশবোর্ড (সহজতম পদ্ধতি)
+1. এই প্রজেক্টের কোড আপনার GitHub রিপোজিটরিতে Push করুন।
+2. [Vercel](https://vercel.com)-এ লগইন করুন এবং **"Add New Project"**-এ ক্লিক করুন।
+3. আপনার GitHub রিপোজিটরিটি সিলেক্ট করুন।
+4. Vercel স্বয়ংক্রিয়ভাবে প্রজেক্টটি **Vite** ফ্রেমওয়ার্ক হিসেবে শনাক্ত করবে:
+   - **Framework Preset**: `Vite`
+   - **Build Command**: `npm run build`
+   - **Output Directory**: `dist`
+5. **"Deploy"** বোতামে ক্লিক করুন। কয়েক সেকেন্ডের মধ্যে আপনার ওয়েবসাইট লাইভ হয়ে যাবে!
+
+### পদ্ধতি ২: Vercel CLI দিয়ে সরাসরি ডিপ্লয়
+টার্মিনালে নিচের কমান্ডগুলো চালান:
+```bash
+# Vercel CLI ইনস্টল না থাকলে:
+npm i -g vercel
+
+# প্রজেক্ট ডিরেক্টরিতে ডিপ্লয় করতে:
+vercel
+```
+
+---
+
+## প্রজেক্টের কনফিগারেশন বৈশিষ্ট্য:
+- `vercel.json` ফাইলে SPA রিরাইট রুল যোগ করা হয়েছে, যার ফলে পেজ রিফ্রেশ করলে কখনো `404 Not Found` হবে না।
+- সব চিত্র ও ফন্ট স্বয়ংক্রিয়ভাবে বান্ডল এবং ক্যাশ করা হয়।
+- কোনোরূপ ডাটাবেস বা জটিল সার্ভার কনফিগারেশনের প্রয়োজন নেই।

@@ -1,0 +1,6 @@
+{
+  "name": "প্রিয়ার কাছে বাপ্পার সাতটি চিঠি",
+  "description": "কিছু কথা মুখে বলা কঠিন, তাই তোমার জন্য সাজিয়ে রেখেছি সাতটি অধ্যায়। বাপ্পার পক্ষ থেকে প্রিয়ার জন্য একটি আন্তরিক ও ভালোবাসার নিবেদন।",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
